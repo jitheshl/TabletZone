@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablets - Health Line</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        
+        header {
+            background-color: #ffaa00;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo h1 {
+            font-size: 36px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style-type: none;
+        }
+
+        nav ul li {
+            margin-left: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #333;
+        }
+
+        /* Product Section */
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 50px;
+        }
+
+        .product {
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+            margin: 15px;
+            padding: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .product h4 {
+            font-size: 22px;
+            color: #333;
+            margin-top: 15px;
+        }
+
+        .product h3 {
+            font-size: 20px;
+            color: #ffaa00;
+            margin-top: 10px;
+        }
+
+        .product button {
+            background-color:  #0044cc;
+            border: none;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .product button:hover {
+            background-color:  #ff0404;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #e68900;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+        }
+
+        .footer p {
+            font-size: 14px;
+        }
+
+        hr {
+            border: 1px solid #cccccc;
+            margin-top: 40px;
+        }
+
+        /* Caution Text */
+        .caution {
+            text-align: center;
+            font-size: 16px;
+            color: red;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo h1 {
+                font-size: 30px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                margin-top: 20px;
+            }
+
+            nav ul li {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+
+            .products {
+                padding: 20px;
+                justify-content: center;
+            }
+
+            .product {
+                width: 250px;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .logo h1 {
+                font-size: 24px;
+            }
+
+            .product {
+                width: 220px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="logo">
+            <h1>Tabletzone</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tablets.html">Products</a></li>
+                <li><a href="contactus.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    
+    <div class="products">
+        <div class="product">
+            <img src="DOLO.jpeg" alt="DOLO-650" height="250px">
+            <h4>DOLO-650</h4>
+            <h3>₹20</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="Cetirizine.jpeg" alt="Cetirizine" height="250px">
+            <h4>Cetirizine</h4>
+            <h3>₹26</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="Paracetamol.jpeg" alt="Paracetamol" height="250px">
+            <h4>Paracetamol</h4>
+            <h3>₹18</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="products">
+        <div class="product">
+            <img src="s-d.jpeg" alt="Loperamide" height="250px">
+            <h4>Loperamide</h4>
+            <h3>₹21</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="s-t.jpeg" alt="Ciprofloxacin" height="250px">
+            <h4>Ciprofloxacin</h4>
+            <h3>₹40</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="s-i.jpeg" alt="Eno" height="250px">
+            <h4>Eno</h4>
+            <h3>₹21</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+
+    <div class="products">
+        <div class="product">
+            <img src="telvas.jpeg" alt="Telvas" height="250px">
+            <h4>Telvas</h4>
+            <h3>₹114</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="saridob.jpeg" alt="Saridon" height="250px">
+            <h4>Saridon</h4>
+            <h3>₹39</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product">
+            <img src="electral.jpeg" alt="Eno" height="250px">
+            <h4>Electral-pack</h4>
+            <h3>₹19</h3>
+            <a href="payment.html">
+                <button>Buy Now</button>
+            </a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="caution">
+        <p>Always consult with a healthcare professional before taking any medication.</p>
+    </div>
+
+    
+    <div class="footer">
+        <p>&copy; 2024 Health Line. All rights reserved.</p>
+    </div>
+
+</body>
+
+</html>

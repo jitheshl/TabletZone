@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Tablet Zone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color:  #ffaa00;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    text-decoration: underline;
+}
+
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #007b5e;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.contact-item {
+    width: 30%;
+}
+
+.contact-item h3 {
+    font-size: 22px;
+    color: #007b5e;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #555;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.contact-form input, .contact-form textarea {
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #007b5e;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #005f44;
+}
+
+footer {
+    background-color:  #ffaa00;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <h1>Contact Us</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="tablets.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contactus.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact-info">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p>If you have any questions or need assistance, feel free to reach out to us using the contact details below. We're here to help you with anything related to our products or services.</p>
+
+            <div class="contact-details">
+                <div class="contact-item">
+                    <h3>Customer Support</h3>
+                    <p><strong>Email:</strong>tabletzone@gmail.com</p>
+                    <p><strong>Phone:</strong> +91 0123456789</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Address</h3>
+                    <p>Tablet Zone Headquarters</p>
+                    <p>1-226/2a(puttur)</p>
+                    <p>ANDHARA PRADESH, India - 517583</p>
+                </div>
+
+                <div class="contact-item">
+                    <h3>Working Hours</h3>
+                    <p><strong>Monday - Friday:</strong> 9:00 AM - 6:00 PM</p>
+                    <p><strong>Saturday:</strong> 10:00 AM - 4:00 PM</p>
+                    <p><strong>Sunday:</strong> Closed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <div class="container">
+            <h2>Contact Us Form</h2>
+            <form action="#" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="name">Your Number:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Tablet Zone. All rights reserved to LAKKALA JITHESH</p>
+        </div>
+    </footer>
+</body>
+</html>
